@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #000;
+}
 
 .nav{
   position: fixed;
@@ -24,6 +27,7 @@
   background-image: url('https://raw.githubusercontent.com/pizza3/InputAudio-Visualizer/gh-pages/images/visual1.png');
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .box2{
@@ -35,6 +39,7 @@
   background-image: url('https://raw.githubusercontent.com/pizza3/InputAudio-Visualizer/gh-pages/images/visual2.png');
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .nav1{

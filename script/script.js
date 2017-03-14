@@ -25,9 +25,9 @@ function openNav(){
   }
 }
 
-function boxNav() {
+function boxNav(a,Url) {
   nav.className+= ' nav2';
   nav.classList.remove('nav1');
   opennav=false;
-  setTimeout(function(){window.location = "https://pizza3.github.io/InputAudio-Visualizer/"; }, 600);
+  setTimeout(function(){window.location = Url; }, 600);
 }
