@@ -25,7 +25,7 @@ function openNav(){
   }
 }
 
-function box() {
+function boxNav() {
   nav.className+= ' nav2';
   nav.classList.remove('nav1');
   opennav=false;
