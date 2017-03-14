@@ -24,3 +24,9 @@ function openNav(){
     opennav=false;
   }
 }
+
+function box() {
+  nav.className+= ' nav2';
+  nav.classList.remove('nav1');
+  setTimeout(function(){window.location = "https://pizza3.github.io/InputAudio-Visualizer/"; }, 600);
+}
