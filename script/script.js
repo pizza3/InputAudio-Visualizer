@@ -1,23 +1,26 @@
-var mic;
-var easing=.125;
-var sens=500;
-var x=.0125;
+var nav = document.getElementById('nav');
+var burger = document.getElementById('burger');
+var up = document.getElementById('up');
+var mid = document.getElementById('mid');
+var down = document.getElementById('down');
+var opennav=false;
 
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  mic = new p5.AudioIn();
-  mic.start();
-  }
 
-function draw() {
-  background(0);
-  noFill();
-  stroke(255);
-  for(var i=0;i<60;i+=6){
-    x+=1;
-    strokeWeight(x*i/100);
-    ellipse(width/2,height/2,10*i,10*i);
+function openNav(){
+  if(opennav==false){
+    nav.className+= ' nav1';
+    nav.classList.remove('nav2');
+    up.className+=' a1';
+    mid.style.width= '0px';
+    down.className+=' a3';
+    opennav=true;
   }
-  var diff = sens*mic.getLevel()-x;
-  x+=diff-easing;
+  else {
+    nav.className+= ' nav2';
+    nav.classList.remove('nav1');
+    up.classList.remove('a1');
+    mid.style.width= '40px';
+    down.classList.remove('a3');
+    opennav=false;
+  }
 }

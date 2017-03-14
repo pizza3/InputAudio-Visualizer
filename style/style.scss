@@ -4,6 +4,96 @@
   box-sizing: border-box;
 }
 
-h1{
-  color: pink;
+
+.nav{
+  position: fixed;
+  width: 0%;
+  height: 100vh;
+  transition: .5s;
+  padding-top: 60px;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+.box{
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+  width: 28vw;
+  height: 30vh;
+  background-color: #000;
+  background-image: url('https://raw.githubusercontent.com/pizza3/InputAudio-Visualizer/gh-pages/images/visual1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.box2{
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+  width: 28vw;
+  height: 30vh;
+  background-color: #000;
+  background-image: url('https://raw.githubusercontent.com/pizza3/InputAudio-Visualizer/gh-pages/images/visual1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.nav1{
+  width: 30vw;
+}
+
+.nav2{
+  width: 0vw;
+}
+
+.burger{
+  display: block;
+  width: 50px;
+  height: 37px;
+  position: fixed;
+  z-index: 19;
+  top: 20px;
+  left: 20px;
+  li:nth-child(1){
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color:#7a7a7a;
+    transition: .5s;
+  }
+
+  li:nth-child(2){
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color:#7a7a7a;
+    margin-top: 10px;
+    transition: .6s;
+  }
+
+  li:nth-child(3){
+    display: block;
+    width: 40px;
+    height: 1px;
+    margin-top: 10px;
+    background-color:#7a7a7a;
+    transition: .5s;
+  }
+}
+
+.a1{
+  transform: rotate(45deg) translate(7px, 9px);
+}
+
+.a2{
+  width: 0px;
+}
+
+.a3{
+  transform: rotate(-45deg) translate(4px, -9px);
+}
+
+@media (max-width:800px) {
+  .nav1{
+    width: 50%;
+  }
 }
